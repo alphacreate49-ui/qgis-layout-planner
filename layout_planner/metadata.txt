@@ -1,0 +1,16 @@
+[general]
+name=Layout Planner
+qgisMinimumVersion=3.34
+qgisMaximumVersion=4.99
+supportsQt6=True
+description=Arrange two or three maps and create an editable QGIS print layout.
+about=Modern native layout planner with draggable and resizable map frames, precise millimetre controls, per-frame canvas view capture, live map previews and one-click QGIS print layout creation. No extra Python packages or online service required.
+version=1.0.0
+author=Muhammad Naeem
+email=
+category=Vector
+icon=icon.svg
+experimental=False
+deprecated=False
+hasProcessingProvider=False
+tags=layout,print,map,cartography,multiple maps,planner

@@ -1,0 +1,9 @@
+Layout Planner 1.0.0 — validation
+
+PASS: 9 geometry / saved-plan tests.
+PASS: 960 page / orientation / arrangement / margin / spacing combinations.
+PASS: Python syntax compilation of all plugin modules.
+PASS: Installable ZIP structure, metadata and archive integrity.
+
+NOT RUN: Native QGIS / Qt UI and print-layout integration (QGIS is not installed in the build environment).
+Run the bundled layout_planner.selftest.run() in the QGIS Python Console for real-QGIS checks.
