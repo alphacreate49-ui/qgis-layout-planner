@@ -1,10 +1,10 @@
-# Layout Planner 1.0.1 — QGIS plugin
+# Layout Planner 1.0.2 — QGIS plugin
 
 Native desktop plugin for planning two or three maps on one editable QGIS print layout. Designed for QGIS 3.34+ and QGIS 4 / Qt 6. Uses only QGIS and its bundled Python/Qt libraries. No pip, Conda, account, hosted service or GPU is required.
 
 ## Install
 
-1. Keep `Layout_Planner_QGIS_v1.0.1.zip` zipped.
+1. Keep `Layout_Planner_QGIS_v1.0.2.zip` zipped.
 2. QGIS → Plugins → Manage and Install Plugins → Install from ZIP.
 3. Choose the ZIP and click Install Plugin. Enable **Layout Planner** if necessary.
 4. Open it from its toolbar icon or Plugins → Layout Planner → Layout Planner.
@@ -61,3 +61,9 @@ Issue tracker: https://github.com/alphacreate49-ui/qgis-layout-planner/issues
 Author email: alphacreate49@gmail.com
 
 Version 1.0.1 adds publication metadata and GPLv3 licensing. Map planning behavior is unchanged. Before QGIS repository submission, the GitHub repository must be public and its layout_planner directory must match the submitted ZIP. Publication approval is controlled by QGIS reviewers and is not guaranteed by local package validation.
+
+## Version 1.0.2 — security-scan remediation
+
+The default local Bandit scan of 1.0.1 reported eight B101 findings in the bundled QGIS smoke test and one B608 SQL-pattern finding in generated English help text. Version 1.0.2 keeps every smoke-test check using explicit validation that raises AssertionError, including under optimized Python. The help wording now says “choose the top-left reference point”; no database operation existed at that location. No scanner rules, source files or tests are excluded or suppressed.
+
+Run `bandit -r layout_planner` and `detect-secrets scan --all-files --no-verify layout_planner` from the extracted package's parent directory. Exact QGIS server scan rules may differ; the new upload must be scanned by the repository before its blocked status can be resolved. Native QGIS integration remains untested in the build environment.

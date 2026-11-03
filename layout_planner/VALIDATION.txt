@@ -1,14 +1,17 @@
-Layout Planner 1.0.1 — validation
+Layout Planner 1.0.2 — validation
 
-PASS: 9 geometry / saved-plan tests.
+PASS: 10 dependency-free tests under normal Python.
+PASS: The same 10 tests under optimized Python (-O), including explicit smoke-test validation.
 PASS: 960 page / orientation / arrangement / margin / spacing combinations.
-PASS: Python syntax compilation of all plugin modules.
-PASS: Installable ZIP structure, metadata and archive integrity.
+PASS: Python syntax compilation of every packaged module.
+PASS: Required publication metadata, complete GPLv3 LICENSE and installable ZIP structure.
+PASS: Bandit 1.9.4, default recursive scan: 0 findings, 0 scan errors.
+PASS: detect-secrets 1.5.0, all package files, without credential verification: 0 findings.
+No scanner skip rules, ignore comments, baseline suppression or excluded test files are used.
+
+Version 1.0.1 local scan: 8 B101 findings in smoke-test checks and 1 B608 SQL-pattern finding in generated English help text.
+Version 1.0.2 replaces those smoke checks with explicit validation and rewords the help text. The plugin contains no SQL execution at that location.
 
 NOT RUN: Native QGIS / Qt UI and print-layout integration (QGIS is not installed in the build environment).
-Run the bundled layout_planner.selftest.run() in the QGIS Python Console for real-QGIS checks.
-
-PASS: Required publication metadata keys are present and non-empty, including author email and source / tracker / homepage URLs.
-PASS: Complete GPLv3 LICENSE included; Python source files include SPDX notices.
-NOT VERIFIED: Live public access to the user GitHub repository and an exact match between its remote files and this ZIP.
-NOT RUN: QGIS website upload or approval.
+Run layout_planner.selftest.run() in the QGIS Python Console for native integration checks.
+NOT RUN: The QGIS repository's own rescan. Its exact scanner configuration can differ from local defaults. Upload the new version and inspect its server results.

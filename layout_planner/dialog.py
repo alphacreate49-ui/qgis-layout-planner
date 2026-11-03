@@ -248,7 +248,7 @@ class PlannerDialog(QDialog):
         foot.setContentsMargins(18, 7, 18, 7)
         foot.addWidget(self.label("Editable QGIS map items · Millimetres · No extra packages", "muted"))
         foot.addStretch()
-        foot.addWidget(self.label("Layout Planner 1.0.1", "muted"))
+        foot.addWidget(self.label("Layout Planner 1.0.2", "muted"))
         root.addWidget(footer)
 
         for combo in (self.size_combo, self.orientation_combo, self.count_combo, self.preset_combo):

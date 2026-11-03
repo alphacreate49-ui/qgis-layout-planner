@@ -8,9 +8,15 @@ import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from layout_planner.model import PAGE_SIZES, MapFrame, Plan
+from layout_planner.selftest import _require
 
 
 class GeometryTests(unittest.TestCase):
+    def test_smoke_validation_raises_for_failed_conditions(self):
+        _require(True, "This check must pass")
+        with self.assertRaisesRegex(AssertionError, "Smoke check failed"):
+            _require(False, "Smoke check failed")
+
     def test_all_page_arrangements_stay_in_bounds_and_have_no_overlap(self):
         combinations = itertools.product(PAGE_SIZES, ("portrait", "landscape"), (2, 3),
                                          ("feature", "columns", "rows"), (0, 12, 34, 999), (0, 6, 30, 999))

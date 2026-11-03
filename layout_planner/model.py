@@ -168,7 +168,7 @@ class Plan:
         rows = "\n".join(f"{f.name}: X {f.x:.1f}; Y {f.y:.1f}; width {f.width:.1f}; height {f.height:.1f} mm" for f in self.frames)
         return (f"QGIS layout — {self.size} {self.orientation} ({pw:g} × {ph:g} mm)\n\n"
                 f"1. Project → New Print Layout. Set Page Properties to {self.size}, {self.orientation}.\n"
-                "2. Add Item → Add Map. In Item Properties → Position and Size, select the top-left reference point and mm units.\n"
+                "2. Add Item → Add Map. In Item Properties → Position and Size, choose the top-left reference point and mm units.\n"
                 f"{rows}\n"
                 "3. Set each map's extent from the main canvas, then adjust its scale or use Move Item Content.\n"
                 "4. Enable Lock layers and Lock styles for layers for each map to keep its appearance independent.\n"
