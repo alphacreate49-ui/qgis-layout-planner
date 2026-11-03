@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 Muhammad Naeem
+
 """QGIS integration: map views, background preview jobs and real print layouts."""
 import math
 from qgis.PyQt.QtCore import QSize

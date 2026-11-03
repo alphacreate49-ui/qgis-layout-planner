@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 Muhammad Naeem
+
 """QGIS plugin lifecycle and toolbar integration."""
 from pathlib import Path
 from qgis.PyQt.QtGui import QIcon

@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 Muhammad Naeem
+
 """Native Qt composition canvas with millimetre geometry and corner resizing."""
 from copy import copy
 from qgis.PyQt.QtCore import Qt, QPointF, QRectF, pyqtSignal

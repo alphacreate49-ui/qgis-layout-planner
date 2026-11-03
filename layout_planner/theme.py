@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 Muhammad Naeem
+
 STYLE = """
 QDialog#LayoutPlannerDialog { background: #f3f6f7; color: #1d3338; }
 QDialog#LayoutPlannerDialog QWidget { font-family: 'Segoe UI', 'Noto Sans', sans-serif; font-size: 12px; color: #263e43; }

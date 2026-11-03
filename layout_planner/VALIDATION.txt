@@ -1,4 +1,4 @@
-Layout Planner 1.0.0 — validation
+Layout Planner 1.0.1 — validation
 
 PASS: 9 geometry / saved-plan tests.
 PASS: 960 page / orientation / arrangement / margin / spacing combinations.
@@ -7,3 +7,8 @@ PASS: Installable ZIP structure, metadata and archive integrity.
 
 NOT RUN: Native QGIS / Qt UI and print-layout integration (QGIS is not installed in the build environment).
 Run the bundled layout_planner.selftest.run() in the QGIS Python Console for real-QGIS checks.
+
+PASS: Required publication metadata keys are present and non-empty, including author email and source / tracker / homepage URLs.
+PASS: Complete GPLv3 LICENSE included; Python source files include SPDX notices.
+NOT VERIFIED: Live public access to the user GitHub repository and an exact match between its remote files and this ZIP.
+NOT RUN: QGIS website upload or approval.

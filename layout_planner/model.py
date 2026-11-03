@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 Muhammad Naeem
+
 """Dependency-free layout geometry. Every coordinate is in page millimetres."""
 from dataclasses import asdict, dataclass, field
 from copy import deepcopy

@@ -1,10 +1,10 @@
-# Layout Planner 1.0 — QGIS plugin
+# Layout Planner 1.0.1 — QGIS plugin
 
 Native desktop plugin for planning two or three maps on one editable QGIS print layout. Designed for QGIS 3.34+ and QGIS 4 / Qt 6. Uses only QGIS and its bundled Python/Qt libraries. No pip, Conda, account, hosted service or GPU is required.
 
 ## Install
 
-1. Keep `Layout_Planner_QGIS_v1.0.0.zip` zipped.
+1. Keep `Layout_Planner_QGIS_v1.0.1.zip` zipped.
 2. QGIS → Plugins → Manage and Install Plugins → Install from ZIP.
 3. Choose the ZIP and click Install Plugin. Enable **Layout Planner** if necessary.
 4. Open it from its toolbar icon or Plugins → Layout Planner → Layout Planner.
@@ -49,3 +49,15 @@ No GIS datasets are included. Existing remote layers may still need their usual 
 Official API references: https://api.qgis.org/api/classQgsLayoutItemMap.html, https://api.qgis.org/api/classQgsLayoutItemPage.html, https://api.qgis.org/api/classQgsLayoutItem.html.
 
 Author: Muhammad Naeem.
+
+## License and contact
+
+Copyright (C) 2026 Muhammad Naeem. Licensed under the GNU General Public License, version 3 only (SPDX: GPL-3.0-only). See the complete LICENSE file.
+
+Source code: https://github.com/alphacreate49-ui/qgis-layout-planner
+
+Issue tracker: https://github.com/alphacreate49-ui/qgis-layout-planner/issues
+
+Author email: alphacreate49@gmail.com
+
+Version 1.0.1 adds publication metadata and GPLv3 licensing. Map planning behavior is unchanged. Before QGIS repository submission, the GitHub repository must be public and its layout_planner directory must match the submitted ZIP. Publication approval is controlled by QGIS reviewers and is not guaranteed by local package validation.

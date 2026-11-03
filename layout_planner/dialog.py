@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 Muhammad Naeem
+
 """Modern native QGIS layout planner dialog, compatible with Qt 5 and Qt 6."""
 from copy import deepcopy
 from pathlib import Path
@@ -245,7 +248,7 @@ class PlannerDialog(QDialog):
         foot.setContentsMargins(18, 7, 18, 7)
         foot.addWidget(self.label("Editable QGIS map items · Millimetres · No extra packages", "muted"))
         foot.addStretch()
-        foot.addWidget(self.label("Layout Planner 1.0", "muted"))
+        foot.addWidget(self.label("Layout Planner 1.0.1", "muted"))
         root.addWidget(footer)
 
         for combo in (self.size_combo, self.orientation_combo, self.count_combo, self.preset_combo):
